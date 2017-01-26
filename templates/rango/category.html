@@ -11,15 +11,15 @@
 			<ul>
 			{% for page in pages %}
 				<li><a href="{{ page.url }}">{{ page.title }}</a></li>
-
 			{% endfor %}
 			</ul>
 		{% else %}
-			<strong>No pages currently in category.</strong>
+			<p><strong>No pages currently in category.</strong></p>
 		{% endif %}
 	{% else %}
 		The specified category does not exist!
 	{% endif %}
+	<a href="/rango/">Index</a>
 	</div>
 </body>
 </html>
